@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,6 +8,11 @@ public class Lamp : MonoBehaviour
     public Light lightToFade;
     public float eachFadeTime = 2f;
     public float fadeWaitTime = 5f;
+
+    public float currentLightValue;
+    public float targetLightValue;
+    public float dimSpeed;
+
     IEnumerator fadeInAndOut(Light lightToFade, bool fadeIn, float duration)
     {
         float minLuminosity = 0; // min intensity
@@ -38,6 +44,9 @@ public class Lamp : MonoBehaviour
 
             yield return null;
         }
+        
+        
+
     }
     //Fade in and out forever
     IEnumerator fadeInAndOutRepeat(Light lightToFade, float duration, float waitTime)
@@ -60,13 +69,23 @@ public class Lamp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(fadeInAndOutRepeat(lightToFade, eachFadeTime, fadeWaitTime));
+        // StartCoroutine(fadeInAndOutRepeat(lightToFade, eachFadeTime, fadeWaitTime));
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        var speedChanged = Math.Abs(currentLightValue - targetLightValue) >= 0.05f;
+        if (speedChanged)
+        {
+            currentLightValue -=
+                fadeWaitTime * Time.deltaTime;  //Mathf.Lerp(currentLightValue, targetLightValue,Time.deltaTime * dimSpeed);
+        }
+        else
+        {
+            currentLightValue = targetLightValue;
+        }
+        lightToFade.intensity = currentLightValue;
 
     }
 }

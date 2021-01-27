@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public ScoreHandler scoreHandler;
+    public LightHandler lightHandler;
 
     private void Awake()
     {
