@@ -1,18 +1,29 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ScoreHandler : MonoBehaviour
 {
-    private static int NumberOfPickedUp;
+    private int NumberOfPickedUp;
+    private int TotalPartsDelivered;
+    
     public int scoreForWin;
 
-    public void IncreaseScore()
+    public void PickUpPart()
     {
         NumberOfPickedUp++;
         print("Score increased : " + NumberOfPickedUp);
+    }
 
-        if (NumberOfPickedUp >= scoreForWin)
+    public void DeliverParts()
+    {
+        TotalPartsDelivered += NumberOfPickedUp;
+        NumberOfPickedUp = 0;
+        
+        print("Delivered parts: " + TotalPartsDelivered);
+
+        if (TotalPartsDelivered >= scoreForWin)
         {
-            print("Won the game!");
+            print("Won the game");
         }
     }
 }

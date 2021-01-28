@@ -19,6 +19,6 @@ public class LightHandler : MonoBehaviour
         if (lamp.currentLightValue > 0) return;
         
         // Game Over    
-        print("Game Over");
+        // print("Game Over");
     }
 }
