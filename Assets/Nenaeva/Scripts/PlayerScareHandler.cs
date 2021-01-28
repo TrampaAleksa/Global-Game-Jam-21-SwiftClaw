@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-internal class PlayerScareController : MonoBehaviour
+public class PlayerScareHandler : MonoBehaviour
 {
     public void RunToPoint(Transform runToPoint)
     {

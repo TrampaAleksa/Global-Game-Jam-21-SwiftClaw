@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     [NonSerialized]public ScoreHandler scoreHandler;
     [NonSerialized]public LightHandler lightHandler;
+    [NonSerialized]public PlayerScareHandler scareHandler;
 
     private void Awake()
     {
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
 
         scoreHandler = GetComponentInChildren<ScoreHandler>();
         lightHandler = GetComponentInChildren<LightHandler>();
+        scareHandler = GetComponentInChildren<PlayerScareHandler>();
     }
     
     
