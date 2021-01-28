@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerScareHandler : MonoBehaviour
 {
+    public PlayerAiController aiController;
+    
     public void RunToPoint(Transform runToPoint, ScareField field)
     {
         print("Player is scared, running!");
