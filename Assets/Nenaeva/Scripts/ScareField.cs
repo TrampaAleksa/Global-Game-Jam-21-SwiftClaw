@@ -1,12 +1,24 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ScareField : MonoBehaviour
 {
     public Transform[] runToPoints;
+    public ScareFieldSource fieldSource;
+
+    private BoxCollider collider;
+
+    private void Awake()
+    {
+        fieldSource = transform.parent.GetComponent<ScareFieldSource>();
+        collider = GetComponent<BoxCollider>();
+    }
 
     private void ScarePlayer()
     {
-        GameManager.Instance.scareHandler.RunToPoint(runToPoints[Random.Range(0, runToPoints.Length)]);
+        fieldSource.SetFieldState(ScareFieldState.Inactive);
+        GameManager.Instance.scareHandler.RunToPoint(runToPoints[Random.Range(0, runToPoints.Length)], this);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -16,4 +28,24 @@ public class ScareField : MonoBehaviour
             ScarePlayer();
         }
     }
+
+    public void SetFieldState(ScareFieldState state)
+    {
+        if (state == ScareFieldState.Active)
+        {
+            collider.enabled = true;
+            return;
+        }
+        
+        if (state == ScareFieldState.Inactive)
+        {
+            collider.enabled = false;
+        }
+    }
+}
+
+public enum ScareFieldState
+{
+    Active, 
+    Inactive,
 }
