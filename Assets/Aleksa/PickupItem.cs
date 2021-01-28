@@ -18,12 +18,4 @@ public class PickupItem : MonoBehaviour
             TriggeredPickup();
         }
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            TriggeredPickup();
-        }
-    }
 }

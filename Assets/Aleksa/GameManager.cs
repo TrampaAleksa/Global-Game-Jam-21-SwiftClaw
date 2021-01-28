@@ -7,12 +7,15 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public ScoreHandler scoreHandler;
-    public LightHandler lightHandler;
+    [NonSerialized]public ScoreHandler scoreHandler;
+    [NonSerialized]public LightHandler lightHandler;
 
     private void Awake()
     {
         Instance = this;
+
+        scoreHandler = GetComponentInChildren<ScoreHandler>();
+        lightHandler = GetComponentInChildren<LightHandler>();
     }
     
     
