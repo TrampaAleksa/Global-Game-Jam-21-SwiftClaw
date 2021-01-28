@@ -6,87 +6,36 @@ using UnityEngine;
 public class Lamp : MonoBehaviour
 {
     public Light lightToFade;
-    public float eachFadeTime = 2f;
-    public float fadeWaitTime = 5f;
 
     public float currentLightValue;
-    public float targetLightValue;
     public float dimSpeed;
+    public float maxLightIntensity;
 
-    IEnumerator fadeInAndOut(Light lightToFade, bool fadeIn, float duration)
-    {
-        float minLuminosity = 0; // min intensity
-        float maxLuminosity = 20; // max intensity
-
-        float counter = 0f;
-
-        //Set Values depending on if fadeIn or fadeOut
-        float a, b;
-
-        if (fadeIn)
-        {
-            a = minLuminosity;
-            b = maxLuminosity;
-        }
-        else
-        {
-            a = maxLuminosity;
-            b = minLuminosity;
-        }
-
-        float currentIntensity = lightToFade.intensity;
-
-        while (counter < duration)
-        {
-            counter += Time.deltaTime;
-
-            lightToFade.intensity = Mathf.Lerp(a, b, counter / duration);
-
-            yield return null;
-        }
-        
-        
-
-    }
-    //Fade in and out forever
-    IEnumerator fadeInAndOutRepeat(Light lightToFade, float duration, float waitTime)
-    {
-        WaitForSeconds waitForXSec = new WaitForSeconds(waitTime);
-
-        while (true)
-        {
-            //Fade out
-            yield return fadeInAndOut(lightToFade, false, duration);
-
-            //Wait
-            yield return waitForXSec;
-
-            //Fade-in 
-            yield return fadeInAndOut(lightToFade, true, duration);
-        }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // StartCoroutine(fadeInAndOutRepeat(lightToFade, eachFadeTime, fadeWaitTime));
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        var speedChanged = Math.Abs(currentLightValue - targetLightValue) >= 0.05f;
-        if (speedChanged)
-        {
-            currentLightValue -=
-                fadeWaitTime * Time.deltaTime;  //Mathf.Lerp(currentLightValue, targetLightValue,Time.deltaTime * dimSpeed);
-        }
-        else
-        {
-            currentLightValue = targetLightValue;
-        }
+        DimLightFixed();
         lightToFade.intensity = currentLightValue;
-
     }
-}
 
+    private void DimLightFixed()
+    {
+        currentLightValue -=
+            dimSpeed * Time.deltaTime;
+
+        currentLightValue = currentLightValue = Mathf.Clamp(currentLightValue,0, maxLightIntensity);
+    }
+
+    // private void DimLightLerped()
+    // {
+    //     var speedChanged = Math.Abs(currentLightValue - targetLightValue) >= 0.05f;
+    //     if (speedChanged)
+    //     {
+    //         Mathf.Lerp(currentLightValue, targetLightValue, Time.deltaTime * dimSpeed);
+    //         lightToFade.intensity = Mathf.Lerp(min, max, counter / duration);
+    //     }
+    //     else
+    //     {
+    //         currentLightValue = targetLightValue;
+    //     }
+    // }
+}
