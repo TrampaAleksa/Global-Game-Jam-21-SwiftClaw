@@ -5,19 +5,28 @@ using UnityEngine;
 
 public class PlayerScareHandler : MonoBehaviour
 {
-    public PlayerAiController aiController;
-    
+    [NonSerialized]public PlayerAiController aiController;
+
+    public GameObject rtpObject;
+
+    private void Awake()
+    {
+        aiController = FindObjectOfType<PlayerAiController>();
+        
+    }
+
+    private ScareField currentField;
     public void RunToPoint(Transform runToPoint, ScareField field)
     {
         print("Player is scared, running!");
-
-        StartCoroutine(Delay(field));
+        aiController.SetTarget(runToPoint);
+        runToPoint.GetComponentInChildren<RunToPoint>().EnablePoint();
+        currentField = field;
     }
 
-    IEnumerator Delay(ScareField field)
+    public void StopsScare()
     {
-        yield return  new WaitForSeconds(5f);
-        
-        field.fieldSource.SetFieldState(ScareFieldState.Active);
+        aiController.DisableAi();
+        currentField.fieldSource.SetFieldState(ScareFieldState.Active);
     }
 }

@@ -15,6 +15,14 @@ public class ScareField : MonoBehaviour
         collider = GetComponent<BoxCollider>();
     }
 
+    private void Start()
+    {
+        foreach (var runToPoint in runToPoints)
+        {
+            Instantiate(GameManager.Instance.scareHandler.rtpObject, runToPoint);
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
