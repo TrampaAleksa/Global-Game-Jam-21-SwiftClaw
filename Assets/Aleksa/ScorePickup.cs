@@ -4,5 +4,6 @@
     {
         base.TriggeredPickup();
         GameManager.Instance.scoreHandler.IncreaseScore();
+        print("picked up score: ");
     }
 }

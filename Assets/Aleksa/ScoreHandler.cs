@@ -7,5 +7,6 @@ public class ScoreHandler : MonoBehaviour
     public void IncreaseScore()
     {
         NumberOfPickedUp++;
+        print("Score increased : " + NumberOfPickedUp);
     }
 }
