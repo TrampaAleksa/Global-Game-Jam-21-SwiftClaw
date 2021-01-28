@@ -15,18 +15,18 @@ public class ScareField : MonoBehaviour
         collider = GetComponent<BoxCollider>();
     }
 
-    private void ScarePlayer()
-    {
-        fieldSource.SetFieldState(ScareFieldState.Inactive);
-        GameManager.Instance.scareHandler.RunToPoint(runToPoints[Random.Range(0, runToPoints.Length)], this);
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             ScarePlayer();
         }
+    }
+
+    private void ScarePlayer()
+    {
+        fieldSource.SetFieldState(ScareFieldState.Inactive);
+        GameManager.Instance.scareHandler.RunToPoint(runToPoints[Random.Range(0, runToPoints.Length)], this);
     }
 
     public void SetFieldState(ScareFieldState state)
