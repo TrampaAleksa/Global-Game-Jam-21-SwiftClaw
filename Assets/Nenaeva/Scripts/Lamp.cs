@@ -10,6 +10,15 @@ public class Lamp : MonoBehaviour
     public float currentLightValue;
     public float dimSpeed;
     public float maxLightIntensity;
+    public float relitTime = 1f;
+
+    private TimedAction timedAction;
+
+    private void Awake()
+    {
+        timedAction = gameObject.AddComponent<TimedAction>().DestroyOnFinish(false);
+        timedAction.AddTickAction(RelitLightLerped);
+    }
 
     void Update()
     {
@@ -27,7 +36,7 @@ public class Lamp : MonoBehaviour
     
     public void Relight()
     {
-        lightToFade.intensity = currentLightValue = maxLightIntensity;
+        timedAction.StartTimedAction(() => print("Light relit"), relitTime);
     }
 
     // private void DimLightLerped()
@@ -43,4 +52,10 @@ public class Lamp : MonoBehaviour
     //         currentLightValue = targetLightValue;
     //     }
     // }
+    
+    private void RelitLightLerped()
+    {
+            currentLightValue = Mathf.Lerp(currentLightValue, maxLightIntensity, Time.deltaTime * 0.2f);
+            lightToFade.intensity = currentLightValue;
+    }
 }
