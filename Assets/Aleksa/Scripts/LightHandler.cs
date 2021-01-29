@@ -33,5 +33,6 @@ public class LightHandler : MonoBehaviour
     public void ExitSafeZone()
     {
         lamp.enabled = true;
+        lamp.relight.Cancel();
     }
 }

@@ -112,9 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightToFade: {fileID: 457324246628068941}
-  relight: {fileID: 0}
-  currentLightValue: 0
-  dimSpeed: 0
+  currentLightValue: 30
+  dimSpeed: 2
   maxLightIntensity: 0
 --- !u!114 &7786040832918321653
 MonoBehaviour:
@@ -128,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f82a9e01689741b0a43651e3f0335211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  relightTime: 1
+  relightTime: 3
 --- !u!1 &457324246628068943
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Lamp : MonoBehaviour
 {
     public Light lightToFade;
-    public LampRelight relight;
+    [NonSerialized]public LampRelight relight;
 
     public float currentLightValue;
     public float dimSpeed;
