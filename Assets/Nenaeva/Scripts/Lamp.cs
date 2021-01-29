@@ -36,6 +36,8 @@ public class Lamp : MonoBehaviour
     
     public void Relight()
     {
+        counter = 0f;
+        lightAtRelitStart = currentLightValue;
         timedAction.StartTimedAction(() => print("Light relit"), relitTime);
     }
 
@@ -52,10 +54,14 @@ public class Lamp : MonoBehaviour
     //         currentLightValue = targetLightValue;
     //     }
     // }
+
+    private float counter;
+    private float lightAtRelitStart;
     
     private void RelitLightLerped()
     {
-            currentLightValue = Mathf.Lerp(currentLightValue, maxLightIntensity, Time.deltaTime * 0.2f);
+        counter += Time.deltaTime;
+            currentLightValue = Mathf.Lerp(lightAtRelitStart, maxLightIntensity, counter/ relitTime);
             lightToFade.intensity = currentLightValue;
     }
 }
