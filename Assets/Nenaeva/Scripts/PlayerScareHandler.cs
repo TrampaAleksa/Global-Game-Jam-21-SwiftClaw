@@ -7,8 +7,6 @@ public class PlayerScareHandler : MonoBehaviour
 {
     [NonSerialized]public PlayerAiController aiController;
 
-    public GameObject rtpObject;
-
     private void Awake()
     {
         aiController = FindObjectOfType<PlayerAiController>();
