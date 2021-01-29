@@ -24,6 +24,11 @@ public class Lamp : MonoBehaviour
 
         currentLightValue = currentLightValue = Mathf.Clamp(currentLightValue,0, maxLightIntensity);
     }
+    
+    public void Relight()
+    {
+        lightToFade.intensity = currentLightValue = maxLightIntensity;
+    }
 
     // private void DimLightLerped()
     // {
