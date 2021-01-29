@@ -26,7 +26,7 @@ public class LightHandler : MonoBehaviour
 
     public void EnterSafeZone()
     {
-        lamp.Relight();
+        lamp.relight.Trigger();
         lamp.enabled = false;
     }
     

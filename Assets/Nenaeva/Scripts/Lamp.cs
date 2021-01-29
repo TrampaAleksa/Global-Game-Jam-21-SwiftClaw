@@ -7,6 +7,7 @@ public class Lamp : MonoBehaviour
 {
     public Light lightToFade;
     [NonSerialized]public LampRelight relight;
+    [NonSerialized] public LampColorGradient gradient;
 
     public float currentLightValue;
     public float dimSpeed;
@@ -15,6 +16,7 @@ public class Lamp : MonoBehaviour
     private void Awake()
     {
         relight = GetComponent<LampRelight>().InjectLamp(this);
+        gradient = GetComponent<LampColorGradient>();
     }
 
     void Update()
@@ -30,8 +32,6 @@ public class Lamp : MonoBehaviour
 
         currentLightValue = currentLightValue = Mathf.Clamp(currentLightValue,0, maxLightIntensity);
     }
-    public void Relight() => relight.Trigger();
-
     // private void DimLightLerped()
     // {
     //     var speedChanged = Math.Abs(currentLightValue - targetLightValue) >= 0.05f;
