@@ -65,3 +65,29 @@ public class Lamp : MonoBehaviour
             lightToFade.intensity = currentLightValue;
     }
 }
+
+public class LampRelight : MonoBehaviour
+{
+    public float relightTime = 1f;
+    
+    private float counter;
+    private float lightAtRelightStart;
+
+    private Lamp lamp;
+    private TimedAction timedAction;
+
+    private void Awake()
+    {
+        timedAction = gameObject.AddComponent<TimedAction>().DestroyOnFinish(false);
+        timedAction.AddTickAction(RelightLightLerped);
+    }
+
+    private void InjectLamp(Lamp lamp) => this.lamp = lamp;
+
+    private void RelightLightLerped()
+    {
+        counter += Time.deltaTime;
+        lamp.currentLightValue = Mathf.Lerp(lightAtRelightStart, lamp.maxLightIntensity, counter/ relightTime);
+        lamp.lightToFade.intensity = lamp.currentLightValue;
+    }
+}
