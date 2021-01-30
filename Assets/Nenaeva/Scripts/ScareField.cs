@@ -46,5 +46,6 @@ public class ScareField : MonoBehaviour
 
 public enum ScareFieldState
 {
-    Active, 
-    Inact
+    Active,
+    Inactive
+}
