@@ -7,6 +7,7 @@ public class ScareFieldWarning : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             print("Triggering warning sound!!!");
+            GameManager.Instance.scareHandler.warningSound.Play();
         }
     }
     

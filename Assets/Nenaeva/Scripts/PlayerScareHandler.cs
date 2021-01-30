@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerScareHandler : MonoBehaviour
 {
     [NonSerialized]public PlayerAiController aiController;
+    public AudioSource warningSound;
 
     private void Awake()
     {
