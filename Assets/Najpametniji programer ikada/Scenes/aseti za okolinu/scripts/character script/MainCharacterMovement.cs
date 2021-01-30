@@ -31,7 +31,6 @@ public class MainCharacterMovement : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
-
     }
 
     void Update()
@@ -44,7 +43,7 @@ public class MainCharacterMovement : MonoBehaviour
 
         handleJumping();
 
-        if (direction.magnitude >= 0.1f) //length(player-distance)
+        if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
@@ -55,8 +54,6 @@ public class MainCharacterMovement : MonoBehaviour
             controller.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
 
         }
-
-        handleAnimations();
     }
 
     private void handleJumping()
@@ -81,11 +78,7 @@ public class MainCharacterMovement : MonoBehaviour
         controller.Move(jumnpVector * Time.deltaTime);
     }
 
-    public void handleAnimations()
-    {
-        //handleWalkingAnim();
-        //handleRunningAnim();
-    }
+
 
 }
 
