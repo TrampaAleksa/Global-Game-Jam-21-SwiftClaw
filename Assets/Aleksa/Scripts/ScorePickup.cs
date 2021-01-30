@@ -4,6 +4,7 @@
     {
         base.TriggeredPickup();
         GameManager.Instance.scoreHandler.PickUpPart();
+        GameManager.Instance.soundHandler.pickupPart.Play();
         print("picked up score: ");
     }
 }

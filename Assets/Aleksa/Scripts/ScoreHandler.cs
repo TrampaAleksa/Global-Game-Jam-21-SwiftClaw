@@ -6,8 +6,6 @@ public class ScoreHandler : MonoBehaviour
     [NonSerialized]public int NumberOfPickedUp;
     [NonSerialized]public int TotalPartsDelivered;
     
-    public AudioSource shipRepairSound;
-    
     public int scoreForWin;
 
     public void PickUpPart()
@@ -31,6 +29,6 @@ public class ScoreHandler : MonoBehaviour
             return;
         }
 
-        shipRepairSound.Play();
+        GameManager.Instance.soundHandler.boatRepair.Play();
     }
 }
