@@ -250,14 +250,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 2983259755495734834}
     m_Modifications:
     - target: {fileID: 457324246182259988, guid: d7e209482eac0b7468a934269a033427, type: 3}
-      propertyPath: currentLightValue
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 457324246182259988, guid: d7e209482eac0b7468a934269a033427, type: 3}
-      propertyPath: dimSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 457324246182259988, guid: d7e209482eac0b7468a934269a033427, type: 3}
       propertyPath: eachFadeTime
       value: 20
       objectReference: {fileID: 0}

@@ -6,11 +6,10 @@ using UnityEngine;
 public class PlayerScareHandler : MonoBehaviour
 {
     [NonSerialized]public PlayerAiController aiController;
-
+    
     private void Awake()
     {
         aiController = FindObjectOfType<PlayerAiController>();
-        
     }
 
     private ScareField currentField;

@@ -26,6 +26,7 @@ public class ScareField : MonoBehaviour
     private void ScarePlayer()
     {
         fieldSource.SetFieldState(ScareFieldState.Inactive);
+        GameManager.Instance.soundHandler.scream.Play();
         GameManager.Instance.scareHandler.RunToPoint(runToPoints[Random.Range(0, runToPoints.Length)], this);
     }
 
@@ -46,6 +47,6 @@ public class ScareField : MonoBehaviour
 
 public enum ScareFieldState
 {
-    Active, 
-    Inactive,
+    Active,
+    Inactive
 }

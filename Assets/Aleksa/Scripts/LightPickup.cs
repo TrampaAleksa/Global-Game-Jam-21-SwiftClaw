@@ -6,5 +6,7 @@
         base.TriggeredPickup();
         GameManager.Instance.lightHandler.AddLight(15);
         print("picked up light ");
+        GameManager.Instance.soundHandler.lightPickup.Play();
+        Destroy(gameObject);
     }
 }
