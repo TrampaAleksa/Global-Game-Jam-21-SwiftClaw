@@ -11,28 +11,17 @@ public class PlayerMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
 
-    public Transform cam;
+    private Transform cam;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        cam = Camera.main.transform;
     }
     
     private void FixedUpdate()
     {
         var playerTransform = transform;
-        //
-        // var vAxis = Input.GetAxis("Vertical");
-        // if (vAxis != 0)
-        // {
-        //     rb.MovePosition(playerTransform.position + playerTransform.forward * (vAxis * movementSpeed * Time.fixedDeltaTime));
-        // }
-        //
-        // var hAxis = Input.GetAxis("Horizontal");
-        // if (hAxis != 0)
-        // {
-        //     playerTransform.Rotate(0, rotationSpeed * hAxis * Time.fixedDeltaTime, 0);
-        // }
-        
+
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
