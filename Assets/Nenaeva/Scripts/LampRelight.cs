@@ -26,7 +26,7 @@ public class LampRelight : MonoBehaviour
     {
         counter += Time.deltaTime;
         lamp.currentLightValue = Mathf.Lerp(lightAtStart, lamp.maxLightIntensity, counter/ relightTime);
-        lamp.lightToFade.intensity = lamp.currentLightValue;
+        lamp.SetLightIntensity();
     }
 
     public void Trigger()

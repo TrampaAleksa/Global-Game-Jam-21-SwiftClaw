@@ -10,20 +10,24 @@ public class PlayerAiController : MonoBehaviour
     private void Awake()
     {
         navmesh = GetComponent<NavMeshAgent>();
-        navmesh.isStopped = true;
         _playerMovement = GetComponent<PlayerMovement>();
+    }
+
+    private void Start()
+    {
+        navmesh.enabled = false;
     }
 
     public void SetTarget(Transform target)
     {
-        navmesh.isStopped = false;
+        navmesh.enabled = true;
         navmesh.SetDestination(target.position);
         _playerMovement.enabled = false;
     }
 
     public void DisableAi()
     {
-        navmesh.isStopped = true;
+        navmesh.enabled = false;
         _playerMovement.enabled = true;
     }
 }
