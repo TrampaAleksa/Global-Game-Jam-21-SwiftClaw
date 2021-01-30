@@ -2,9 +2,8 @@
 
 public class LampColorGradient : MonoBehaviour
 {
-    public Color nearColor;
     public float gradientSpeed;
-    private Color farColor;
+    private Color regularColor;
 
     private Color targetColor;
 
@@ -22,14 +21,13 @@ public class LampColorGradient : MonoBehaviour
         lightHandler = GameManager.Instance.lightHandler;
         
         var color = lightHandler.lamp.lightToFade.color;
-        farColor = new Color(color.r, color.g , color.b, color.a);
-        targetColor = new Color(nearColor.r, nearColor.g, nearColor.b, nearColor.a);
+        regularColor = new Color(color.r, color.g , color.b, color.a);
     }
 
-    public void LampIsNear()
+    public void LampIsNear(Color colorChange)
     {
         timedAction.CancelTimer();
-        targetColor = new Color(nearColor.r, nearColor.g, nearColor.b, nearColor.a);
+        targetColor = new Color(colorChange.r, colorChange.g, colorChange.b, colorChange.a);
         counter = 0f;
         
         var color = lightHandler.lamp.lightToFade.color;
@@ -41,7 +39,7 @@ public class LampColorGradient : MonoBehaviour
     public void LampIsFar()
     {
         timedAction.CancelTimer();
-        targetColor = new Color(farColor.r, farColor.g, farColor.b, farColor.a);;
+        targetColor = new Color(regularColor.r, regularColor.g, regularColor.b, regularColor.a);;
         counter = 0f;
         
         var color = lightHandler.lamp.lightToFade.color;
