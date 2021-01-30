@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class ScoreHandler : MonoBehaviour
 {
-    private int NumberOfPickedUp;
-    private int TotalPartsDelivered;
+    [NonSerialized]public int NumberOfPickedUp;
+    [NonSerialized]public int TotalPartsDelivered;
     
     public int scoreForWin;
 
