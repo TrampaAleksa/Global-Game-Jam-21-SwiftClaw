@@ -7,4 +7,5 @@ public class SoundHandler : MonoBehaviour
     public AudioSource pickupPart;
     public AudioSource snakeHiss;
     public AudioSource scream;
+    public AudioSource lightPickup;
 }
