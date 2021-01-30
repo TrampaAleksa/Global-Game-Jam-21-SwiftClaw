@@ -2706,7 +2706,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a83f5f151c054be4b05b4559c37a6d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1071667084}
 --- !u!4 &1751852301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2983259757181199561, guid: 40a872faf39859b468802ab846916e77, type: 3}
@@ -3796,6 +3795,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2138231852525536522, guid: 2c749f5554287104a9a128ad32266897, type: 3}
+      propertyPath: m_Volume
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 2327947001926546663, guid: 2c749f5554287104a9a128ad32266897, type: 3}
       propertyPath: rtpObject
       value: 
