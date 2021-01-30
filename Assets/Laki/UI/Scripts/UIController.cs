@@ -8,13 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-    public GameObject mainMenu;
-    public GameObject tutorialObject;
-    public GameObject inGameObject;
-    public GameObject tryAgainObject;
-    public GameObject congratsObject;
-    public GameObject currentObject;
-    public GameObject pauseObject;
+    public UIScreen currentScreen;
+    public UIScreen mainMenu;
+    public UIScreen inGame;
     public static UIController Instance;
     public bool isPressed=false;
 
@@ -27,30 +23,14 @@ public class UIController : MonoBehaviour
 
     public AudioMixer mixer;
 
-    public void ButtonClick(GameObject activeObject)
+    public void ChangeScreen(UIScreen screen)
     {
-        if (currentObject != null)
-            currentObject.SetActive(false);
-        currentObject = activeObject;
-        currentObject.SetActive(true);
+        currentScreen.TurnOffScreen();
+        screen.gameObject.SetActive(true);
+        screen.TurnOnScreen();
+        currentScreen = screen;
     }
 
-    public void Pause(bool isActive)
-    {
-        PauseTime(isActive);
-        pauseObject.SetActive(isActive);
-    }
-    public void PauseTime(bool isActive)
-    {
-        if (isActive)
-            Time.timeScale = 0;
-        else
-            Time.timeScale = 1;
-    }
-    public void ChangeScene(int sceneIndex)
-    {
-        SceneManager.LoadScene(sceneIndex);
-    }
     public void Toggle(bool isTrue)
     {
         if (isTrue)
@@ -63,27 +43,6 @@ public class UIController : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (currentObject.name == inGameObject.name)
-            {
-                if (!isPressed)
-                {
-                    isPressed = true;
-                    Pause(true);
-                }
-                else
-                {
-                    isPressed = false;
-                    Pause(false);
-                }
-            }
-
-        }
-    }
     public void Exit()
     {
         Application.Quit();
