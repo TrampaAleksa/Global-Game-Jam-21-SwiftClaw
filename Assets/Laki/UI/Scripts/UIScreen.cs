@@ -5,5 +5,8 @@ using UnityEngine;
 public class UIScreen : MonoBehaviour
 {
     public virtual void TurnOnScreen() { }
-    public virtual void TurnOffScreen() { }
+    public virtual void TurnOffScreen() 
+    {
+        gameObject.SetActive(false);
+    }
 }
