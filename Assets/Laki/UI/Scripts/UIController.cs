@@ -9,31 +9,32 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
     public UIScreen currentScreen;
-    public UIScreen mainMenu;
-    public UIScreen inGame;
     public static UIController Instance;
-    public bool isPressed=false;
 
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
         GameObject.DontDestroyOnLoad(gameObject);
+        currentScreen.TurnOnScreen();
     }
 
     public AudioMixer mixer;
 
-    public void ChangeScreen(UIScreen screen)
+    public void ChangeScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
+    public void ChangeScreen(int index)
     {
         currentScreen.TurnOffScreen();
-        screen.gameObject.SetActive(true);
-        screen.TurnOnScreen();
-        currentScreen = screen;
+        ChangeScene(index);
     }
 
     public void Toggle(bool isTrue)
     {
-        if (isTrue)
+        if (!isTrue)
         {
             mixer.SetFloat("Music", 10);
         }

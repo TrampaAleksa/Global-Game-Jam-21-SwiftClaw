@@ -10,6 +10,6 @@ public class CongratsScreen : UIScreen
     }
     public override void TurnOffScreen()
     {
-        base.TurnOnScreen();
+        base.TurnOffScreen();
     }
 }
