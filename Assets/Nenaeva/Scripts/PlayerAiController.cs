@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class PlayerAiController : MonoBehaviour
 {
     private NavMeshAgent navmesh;
-    private PlayerMovement _playerMovement;
+    [NonSerialized]public PlayerMovement _playerMovement;
 
     public Animator animator;
 
@@ -24,7 +24,7 @@ public class PlayerAiController : MonoBehaviour
     {
         navmesh.enabled = true;
         navmesh.SetDestination(target.position);
-        _playerMovement.enabled = false;
+        // _playerMovement.enabled = false;
     }
 
     public void DisableAi()

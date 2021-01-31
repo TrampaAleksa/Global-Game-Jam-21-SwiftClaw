@@ -23,11 +23,13 @@ public class PlayerScareHandler : MonoBehaviour
     private IEnumerator JumpscareDelay(Transform runToPoint, ScareField field)
     {
         GameManager.Instance.playerAnimator.SetTrigger("JumpScare");
-        
+        aiController._playerMovement.enabled = false;
         yield return new WaitForSeconds(jumpScareDuration);
         
-        print("Player is scared, running!");
+        
         aiController.SetTarget(runToPoint);
+
+        print("Player is scared, running!");
         runToPoint.GetComponentInChildren<RunToPoint>().EnablePoint();
         currentField = field;
     }
