@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Laki/proba.unity
     guid: 2bd495a79c3517b40bb17bf2d179e4ac
-  - enabled: 1
+  - enabled: 0
     path: Assets/Aleksa/Scenes/Main with UI.unity
     guid: b28b990e972d5cc4aa50b9b073f27abd
+  - enabled: 1
+    path: Assets/Aleksa/Scenes/Island Main.unity
+    guid: 2ad6e85d447f7994aa47d62312291eb2
   m_configObjects: {}

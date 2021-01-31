@@ -21,6 +21,9 @@ public class LightHandler : MonoBehaviour
     {
         if (lamp.currentLightValue > 0) return;
         
+        InGameScreen igs = (InGameScreen) UIController.Instance.currentScreen;
+        igs.ChangeSubScreen((int)InGameScreen.SubScreenState.tryAgain);
+        
         // Game Over    
         // print("Game Over");
     }
