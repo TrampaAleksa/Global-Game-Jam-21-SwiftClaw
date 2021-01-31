@@ -6,7 +6,6 @@ public class TutorialScreen : UIScreen
 {
     public override void TurnOnScreen()
     {
-        base.TurnOnScreen();
     }
     public override void TurnOffScreen()
     {

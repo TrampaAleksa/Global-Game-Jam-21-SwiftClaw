@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TryAgainScreen : UIScreen
+public class IGScreen : UIScreen
 {
     public override void TurnOnScreen()
     {

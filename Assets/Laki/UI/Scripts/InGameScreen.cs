@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InGameScreen : UIScreen
 {
-    public enum ListOfSubScreens
+    public enum SubScreenState
     {
         tutorial,
         inGame,
@@ -12,18 +12,57 @@ public class InGameScreen : UIScreen
         congrats,
         pause
     }
+
+    public bool isPaused;
     public UIScreen currentSubSreen;
-    public ListOfSubScreens screenIndex;
-    List<UIScreen> screens = new List<UIScreen>();
-    private void Start()
+    public SubScreenState screenIndex;
+    public List<UIScreen> screens = new List<UIScreen>();
+    private void Awake()
     {
         var scr= gameObject.GetComponentsInChildren<UIScreen>();
+        int i = 0;
         foreach(var screen in scr)
         {
-            screens.Add(screen);
+            if (i != 0)
+            {
+                screens.Add(screen);
+                screen.gameObject.SetActive(false);
+            }
+            else
+                i++;
         }
     }
-    public void ChangeSubScreen(ListOfSubScreens index)
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(currentSubSreen==screens[(int)SubScreenState.inGame] || currentSubSreen==screens[(int)SubScreenState.pause])
+            {
+                if(isPaused)
+                {
+                    UnPause();
+                }
+                else
+                {
+                    Pause();
+                }
+            }
+        }
+    }
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        ChangeSubScreen((int)SubScreenState.pause);
+        isPaused = true;
+    }
+    public void UnPause()
+    {
+        Time.timeScale = 1;
+        ChangeSubScreen((int)SubScreenState.inGame);
+        isPaused = false;
+    }
+
+    public void ChangeSubScreen(int index)
     {
         if (currentSubSreen != null)
             currentSubSreen.TurnOffScreen();
@@ -31,14 +70,16 @@ public class InGameScreen : UIScreen
         screens[ind].gameObject.SetActive(true);
         screens[ind].TurnOnScreen();
         currentSubSreen = screens[ind];
+        screenIndex = (SubScreenState)ind;
     }
     public override void TurnOnScreen()
     {
-        ChangeSubScreen(ListOfSubScreens.tutorial);
+        ChangeSubScreen((int)SubScreenState.tutorial);
     }
     public override void TurnOffScreen()
     {
         base.TurnOffScreen();
         currentSubSreen.TurnOffScreen();
+        UnPause();
     }
 }
