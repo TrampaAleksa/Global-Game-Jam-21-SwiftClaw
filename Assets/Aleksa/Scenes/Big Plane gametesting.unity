@@ -2864,7 +2864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1839972709
 Light:
   m_ObjectHideFlags: 0
@@ -2933,13 +2933,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839972708}
-  m_LocalRotation: {x: -0.7482242, y: -0.5534276, z: -0.3025667, w: 0.20574713}
+  m_LocalRotation: {x: -0.22386514, y: 0.027748154, z: 0.5139864, w: -0.8276065}
   m_LocalPosition: {x: 0, y: 5.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 220, y: -17.083984, z: 293.281}
+  m_LocalEulerAnglesHint: {x: 20, y: -17.083984, z: 293.281}
 --- !u!4 &1901490417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 318705515243236858, guid: c67cf817773ef62449a67c08c35b588c, type: 3}
@@ -3112,15 +3112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00059334113
+      value: -0.00059334154
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.65586454
+      value: -0.6558646
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0005155155
+      value: -0.000515516
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3993,6 +3993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a83f5f151c054be4b05b4559c37a6d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 349515612}
 --- !u!195 &2983259757181199557
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4003,10 +4004,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 5
+  m_Acceleration: 13
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 230
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
