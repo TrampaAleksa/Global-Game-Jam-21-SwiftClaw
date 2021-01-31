@@ -1172,7 +1172,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6753866595490759290}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1656,7 +1656,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457324246182259988, guid: d7e209482eac0b7468a934269a033427, type: 3}
       propertyPath: dimSpeed
-      value: 1
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 457324246182259988, guid: d7e209482eac0b7468a934269a033427, type: 3}
+      propertyPath: currentLightValue
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 457324246182259991, guid: d7e209482eac0b7468a934269a033427, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1760,11 +1764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457324246628068941, guid: d7e209482eac0b7468a934269a033427, type: 3}
       propertyPath: m_Range
-      value: 15
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 457324246628068941, guid: d7e209482eac0b7468a934269a033427, type: 3}
       propertyPath: m_Lightmapping
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 457324246628068943, guid: d7e209482eac0b7468a934269a033427, type: 3}
       propertyPath: m_StaticEditorFlags
