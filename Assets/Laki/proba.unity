@@ -1287,7 +1287,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 156263408301325243}
         m_TargetAssemblyTypeName: UIController, Assembly-CSharp
-        m_MethodName: ChangeScene
+        m_MethodName: ChangeScreen
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

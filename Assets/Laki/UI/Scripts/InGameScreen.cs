@@ -17,22 +17,7 @@ public class InGameScreen : UIScreen
     public bool isPaused;
     public UIScreen currentSubSreen;
     public SubScreenState screenIndex;
-    public List<UIScreen> screens = new List<UIScreen>();
-    private void Awake()
-    {
-        var scr= gameObject.GetComponentsInChildren<UIScreen>();
-        int i = 0;
-        foreach(var screen in scr)
-        {
-            if (i != 0)
-            {
-                screens.Add(screen);
-                screen.gameObject.SetActive(false);
-            }
-            else
-                i++;
-        }
-    }
+    public List<UIScreen> screens;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -48,6 +33,10 @@ public class InGameScreen : UIScreen
                     Pause();
                 }
             }
+        }
+        if(Input.GetKeyDown(KeyCode.T))
+        {
+            ChangeSubScreen(3);
         }
     }
     public void Pause()
@@ -75,6 +64,8 @@ public class InGameScreen : UIScreen
     }
     public override void TurnOnScreen()
     {
+        foreach (var screen in screens)
+            screen.gameObject.SetActive(false);
         ChangeSubScreen((int)SubScreenState.tutorial);
     }
     public override void TurnOffScreen()
