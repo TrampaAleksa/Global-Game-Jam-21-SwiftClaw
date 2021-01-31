@@ -12,6 +12,6 @@ public class PartNumberUpdater : MonoBehaviour
 
     private void Update()
     {
-        text.text = GameManager.Instance.scoreHandler.NumberOfPickedUp.ToString();
+        text.text ="x " + GameManager.Instance.scoreHandler.NumberOfPickedUp;
     }
 }

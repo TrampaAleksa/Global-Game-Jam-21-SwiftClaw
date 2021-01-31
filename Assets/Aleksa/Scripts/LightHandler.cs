@@ -4,7 +4,8 @@ using UnityEngine;
 public class LightHandler : MonoBehaviour
 {
     [NonSerialized] public Lamp lamp;
-    
+    public float fireflyCooldown;
+
     private void Awake()
     {
         lamp = FindObjectOfType<Lamp>();
