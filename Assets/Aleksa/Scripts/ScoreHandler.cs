@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class ScoreHandler : MonoBehaviour
 {
-    private int NumberOfPickedUp;
-    private int TotalPartsDelivered;
+    [NonSerialized]public int NumberOfPickedUp;
+    [NonSerialized]public int TotalPartsDelivered;
     
     public int scoreForWin;
 
@@ -16,6 +16,8 @@ public class ScoreHandler : MonoBehaviour
 
     public void DeliverParts()
     {
+        if (NumberOfPickedUp == 0) return;
+        
         TotalPartsDelivered += NumberOfPickedUp;
         NumberOfPickedUp = 0;
         
@@ -24,6 +26,9 @@ public class ScoreHandler : MonoBehaviour
         if (TotalPartsDelivered >= scoreForWin)
         {
             print("Won the game");
+            return;
         }
+
+        GameManager.Instance.soundHandler.boatRepair.Play();
     }
 }

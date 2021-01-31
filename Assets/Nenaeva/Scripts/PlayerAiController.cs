@@ -5,15 +5,17 @@ using UnityEngine.AI;
 public class PlayerAiController : MonoBehaviour
 {
     private NavMeshAgent navmesh;
-    public Transform target;
-
     private PlayerMovement _playerMovement;
 
     private void Awake()
     {
         navmesh = GetComponent<NavMeshAgent>();
-        navmesh.enabled = false;
         _playerMovement = GetComponent<PlayerMovement>();
+    }
+
+    private void Start()
+    {
+        navmesh.enabled = false;
     }
 
     public void SetTarget(Transform target)
@@ -27,13 +29,5 @@ public class PlayerAiController : MonoBehaviour
     {
         navmesh.enabled = false;
         _playerMovement.enabled = true;
-    }
-
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            SetTarget(target);
-        }
     }
 }
