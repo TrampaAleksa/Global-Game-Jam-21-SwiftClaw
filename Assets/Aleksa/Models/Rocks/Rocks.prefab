@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 143389383009272812}
   - component: {fileID: 2956652451037225872}
   - component: {fileID: 4131143203506543653}
+  - component: {fileID: 585795545}
   m_Layer: 0
   m_Name: stone3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &143389383009272812
 Transform:
@@ -81,6 +82,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &585795545
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48284090056788849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28311646
+  m_Center: {x: 0.000000014901165, y: -0.0000009685755, z: -0.000000022351742}
 --- !u!1 &601305150617431938
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,12 +106,13 @@ GameObject:
   - component: {fileID: 2227894516183031347}
   - component: {fileID: 1881801899843471575}
   - component: {fileID: 1533479626133099031}
+  - component: {fileID: 799549048}
   m_Layer: 0
   m_Name: stone7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2227894516183031347
 Transform:
@@ -162,6 +177,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &799549048
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601305150617431938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.13
+  m_Center: {x: 0.05861721, y: 0.00005868876, z: 0.038214654}
 --- !u!1 &1464406435547121727
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,12 +201,13 @@ GameObject:
   - component: {fileID: 1777833383303202438}
   - component: {fileID: 6525690005543198757}
   - component: {fileID: 9150686411300290606}
+  - component: {fileID: 1468806902}
   m_Layer: 0
   m_Name: stone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1777833383303202438
 Transform:
@@ -243,6 +272,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1468806902
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464406435547121727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19982749, y: 0.19808814, z: 0.54690814}
+  m_Center: {x: 0.036360435, y: 0.01381805, z: 0.2010329}
 --- !u!1 &1830197657088973264
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,12 +296,13 @@ GameObject:
   - component: {fileID: 1830197657088973267}
   - component: {fileID: 1830197657088973269}
   - component: {fileID: 1830197657088973266}
+  - component: {fileID: 621582172}
   m_Layer: 0
   m_Name: stone3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657088973267
 Transform:
@@ -324,6 +367,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &621582172
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657088973264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28311646
+  m_Center: {x: -0.000000461936, y: -0.000000014901165, z: -0.000000048428774}
 --- !u!1 &1830197657246484871
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,12 +391,13 @@ GameObject:
   - component: {fileID: 1830197657246484870}
   - component: {fileID: 1830197657246484984}
   - component: {fileID: 1830197657246484985}
+  - component: {fileID: 1075314544}
   m_Layer: 0
   m_Name: stone1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657246484870
 Transform:
@@ -405,6 +462,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1075314544
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657246484871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.27345407
+  m_Center: {x: 0.036358073, y: 0.013816173, z: 0.20103288}
 --- !u!1 &1830197657253905495
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,12 +486,13 @@ GameObject:
   - component: {fileID: 1830197657253905494}
   - component: {fileID: 1830197657253905480}
   - component: {fileID: 1830197657253905481}
+  - component: {fileID: 1791043752}
   m_Layer: 0
   m_Name: stone6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657253905494
 Transform:
@@ -486,6 +557,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1791043752
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657253905495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.14511657
+  m_Center: {x: 0.04645126, y: 0.022819243, z: -0.014035238}
 --- !u!1 &1830197657290886972
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,12 +581,13 @@ GameObject:
   - component: {fileID: 1830197657290886975}
   - component: {fileID: 1830197657290886961}
   - component: {fileID: 1830197657290886974}
+  - component: {fileID: 1212605165}
   m_Layer: 0
   m_Name: stone6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657290886975
 Transform:
@@ -567,6 +652,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1212605165
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657290886972}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.14511657
+  m_Center: {x: 0.046451706, y: 0.022819243, z: -0.01403339}
 --- !u!1 &1830197657334536387
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,12 +676,13 @@ GameObject:
   - component: {fileID: 1830197657334536386}
   - component: {fileID: 1830197657334536388}
   - component: {fileID: 1830197657334536389}
+  - component: {fileID: 2138936942}
   m_Layer: 0
   m_Name: stone5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657334536386
 Transform:
@@ -648,6 +747,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &2138936942
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657334536387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.24845368
+  m_Center: {x: -0.0000038146973, y: -0.0000018924475, z: -0.000000022351742}
 --- !u!1 &1830197657404018479
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,12 +771,13 @@ GameObject:
   - component: {fileID: 1830197657404018478}
   - component: {fileID: 1830197657404018464}
   - component: {fileID: 1830197657404018465}
+  - component: {fileID: 1747976692}
   m_Layer: 0
   m_Name: stone4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657404018478
 Transform:
@@ -729,6 +842,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1747976692
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657404018479}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.16
+  m_Center: {x: -0.0000008791685, y: -0.000000029802322, z: 0}
 --- !u!1 &1830197657479704831
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,12 +866,13 @@ GameObject:
   - component: {fileID: 1830197657479704830}
   - component: {fileID: 1830197657479704816}
   - component: {fileID: 1830197657479704817}
+  - component: {fileID: 825382039}
   m_Layer: 0
   m_Name: stone5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657479704830
 Transform:
@@ -810,6 +937,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &825382039
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657479704831}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.24845368
+  m_Center: {x: -0.0000009536743, y: -0.0000018924475, z: -0.000000029802322}
 --- !u!1 &1830197657486177344
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,12 +961,13 @@ GameObject:
   - component: {fileID: 1830197657486177347}
   - component: {fileID: 1830197657486177349}
   - component: {fileID: 1830197657486177346}
+  - component: {fileID: 1819742469}
   m_Layer: 0
   m_Name: stone3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657486177347
 Transform:
@@ -891,6 +1032,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1819742469
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657486177344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28311646
+  m_Center: {x: 0.0000026375055, y: 0.0000014156103, z: -0.000000029802322}
 --- !u!1 &1830197657544437660
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,12 +1056,13 @@ GameObject:
   - component: {fileID: 1830197657544437663}
   - component: {fileID: 1830197657544437649}
   - component: {fileID: 1830197657544437662}
+  - component: {fileID: 2052739318}
   m_Layer: 0
   m_Name: stone7 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657544437663
 Transform:
@@ -972,6 +1127,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &2052739318
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657544437660}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169326
+  m_Center: {x: 0.058617204, y: 0.00005891174, z: 0.038216554}
 --- !u!1 &1830197657586986653
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,12 +1151,13 @@ GameObject:
   - component: {fileID: 1830197657586986652}
   - component: {fileID: 1830197657586986654}
   - component: {fileID: 1830197657586986655}
+  - component: {fileID: 95948375}
   m_Layer: 0
   m_Name: stone4 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657586986652
 Transform:
@@ -1053,6 +1222,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &95948375
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657586986653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.00000078976154, y: -2.220446e-15, z: 0.000000018626451}
 --- !u!1 &1830197657668097358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,12 +1246,13 @@ GameObject:
   - component: {fileID: 1830197657668097345}
   - component: {fileID: 1830197657668097347}
   - component: {fileID: 1830197657668097344}
+  - component: {fileID: 790391025}
   m_Layer: 0
   m_Name: stone7 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657668097345
 Transform:
@@ -1134,6 +1317,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &790391025
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657668097358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169329
+  m_Center: {x: 0.058617488, y: 0.00005865789, z: 0.03821536}
 --- !u!1 &1830197657741654801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1145,12 +1341,13 @@ GameObject:
   - component: {fileID: 1830197657741654800}
   - component: {fileID: 1830197657741654802}
   - component: {fileID: 1830197657741654803}
+  - component: {fileID: 2136758864}
   m_Layer: 0
   m_Name: stone2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657741654800
 Transform:
@@ -1215,6 +1412,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &2136758864
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657741654801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21925877
+  m_Center: {x: 0.00000044703484, y: 8.881784e-16, z: -0.000000031664968}
 --- !u!1 &1830197657744643243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,12 +1472,13 @@ GameObject:
   - component: {fileID: 1830197657748316596}
   - component: {fileID: 1830197657748316598}
   - component: {fileID: 1830197657748316599}
+  - component: {fileID: 1139244829}
   m_Layer: 0
   m_Name: stone3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657748316596
 Transform:
@@ -1332,6 +1543,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1139244829
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657748316597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.28311646
+  m_Center: {x: 0.000000014901165, y: -0.000000014901165, z: 1.0090174e-16}
 --- !u!1 &1830197657768373734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,12 +1567,13 @@ GameObject:
   - component: {fileID: 1830197657768373721}
   - component: {fileID: 1830197657768373723}
   - component: {fileID: 1830197657768373720}
+  - component: {fileID: 358307863}
   m_Layer: 0
   m_Name: stone4 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657768373721
 Transform:
@@ -1413,6 +1638,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &358307863
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657768373734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: -0.0000013560057, y: 0, z: 0.000000014901161}
 --- !u!1 &1830197657810981578
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,12 +1662,13 @@ GameObject:
   - component: {fileID: 1830197657810981581}
   - component: {fileID: 1830197657810981583}
   - component: {fileID: 1830197657810981580}
+  - component: {fileID: 1426416642}
   m_Layer: 0
   m_Name: stone6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657810981581
 Transform:
@@ -1494,6 +1733,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1426416642
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657810981578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.14511655
+  m_Center: {x: 0.046452213, y: 0.022819718, z: -0.014029753}
 --- !u!1 &1830197657815212717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,12 +1757,13 @@ GameObject:
   - component: {fileID: 1830197657815212716}
   - component: {fileID: 1830197657815212718}
   - component: {fileID: 1830197657815212719}
+  - component: {fileID: 657236130}
   m_Layer: 0
   m_Name: stone1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657815212716
 Transform:
@@ -1575,6 +1828,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &657236130
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657815212717}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.273454
+  m_Center: {x: 0.036356643, y: 0.01381796, z: 0.20103286}
 --- !u!1 &1830197657895848922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,12 +1852,13 @@ GameObject:
   - component: {fileID: 1830197657895848925}
   - component: {fileID: 1830197657895848927}
   - component: {fileID: 1830197657895848924}
+  - component: {fileID: 71824471}
   m_Layer: 0
   m_Name: stone7 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657895848925
 Transform:
@@ -1656,6 +1923,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &71824471
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657895848922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169326
+  m_Center: {x: 0.058617204, y: 0.000058732927, z: 0.038216554}
 --- !u!1 &1830197657964019170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,12 +1947,13 @@ GameObject:
   - component: {fileID: 1830197657964019173}
   - component: {fileID: 1830197657964019175}
   - component: {fileID: 1830197657964019172}
+  - component: {fileID: 1274144742}
   m_Layer: 0
   m_Name: stone1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197657964019173
 Transform:
@@ -1737,6 +2018,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1274144742
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197657964019170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.27345422
+  m_Center: {x: 0.036358558, y: 0.013818329, z: 0.20103301}
 --- !u!1 &1830197658063690743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,12 +2042,13 @@ GameObject:
   - component: {fileID: 1830197658063690742}
   - component: {fileID: 1830197658063690728}
   - component: {fileID: 1830197658063690729}
+  - component: {fileID: 1480256344}
   m_Layer: 0
   m_Name: stone4 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658063690742
 Transform:
@@ -1818,6 +2113,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1480256344
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658063690743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.000000074505806, y: -2.220446e-15, z: -0.000000074505806}
 --- !u!1 &1830197658064917756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,12 +2137,13 @@ GameObject:
   - component: {fileID: 1830197658064917759}
   - component: {fileID: 1830197658064917745}
   - component: {fileID: 1830197658064917758}
+  - component: {fileID: 339934187}
   m_Layer: 0
   m_Name: stone1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658064917759
 Transform:
@@ -1899,6 +2208,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &339934187
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658064917756}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.27345407
+  m_Center: {x: 0.036359504, y: 0.013816888, z: 0.20103286}
 --- !u!1 &1830197658151160459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1910,12 +2232,13 @@ GameObject:
   - component: {fileID: 1830197658151160458}
   - component: {fileID: 1830197658151160460}
   - component: {fileID: 1830197658151160461}
+  - component: {fileID: 2061610957}
   m_Layer: 0
   m_Name: stone1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658151160458
 Transform:
@@ -1980,6 +2303,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &2061610957
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658151160459}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.27345422
+  m_Center: {x: 0.036358476, y: 0.013818879, z: 0.20103349}
 --- !u!1 &1830197658176369243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1991,12 +2327,13 @@ GameObject:
   - component: {fileID: 1830197658176369242}
   - component: {fileID: 1830197658176369244}
   - component: {fileID: 1830197658176369245}
+  - component: {fileID: 550380027}
   m_Layer: 0
   m_Name: stone5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658176369242
 Transform:
@@ -2061,6 +2398,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &550380027
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658176369243}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.24845368
+  m_Center: {x: -0.0000014305115, y: 0.000002875924, z: -2.4548116e-16}
 --- !u!1 &1830197658312208248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,12 +2422,13 @@ GameObject:
   - component: {fileID: 1830197658312208251}
   - component: {fileID: 1830197658312208253}
   - component: {fileID: 1830197658312208250}
+  - component: {fileID: 499734490}
   m_Layer: 0
   m_Name: stone7 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658312208251
 Transform:
@@ -2142,6 +2493,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &499734490
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658312208248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169333
+  m_Center: {x: 0.05861768, y: 0.000058700884, z: 0.038214646}
 --- !u!1 &1830197658352286417
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,12 +2517,13 @@ GameObject:
   - component: {fileID: 1830197658352286416}
   - component: {fileID: 1830197658352286418}
   - component: {fileID: 1830197658352286419}
+  - component: {fileID: 811838983}
   m_Layer: 0
   m_Name: stone4 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658352286416
 Transform:
@@ -2223,6 +2588,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &811838983
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658352286417}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.000000074505806, y: 0, z: -0.000000014901161}
 --- !u!1 &1830197658363530823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2234,12 +2612,13 @@ GameObject:
   - component: {fileID: 1830197658363530822}
   - component: {fileID: 1830197658363530680}
   - component: {fileID: 1830197658363530681}
+  - component: {fileID: 130837160}
   m_Layer: 0
   m_Name: stone7 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658363530822
 Transform:
@@ -2304,6 +2683,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &130837160
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658363530823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.09
+  m_Center: {x: 0.05861745, y: 0.000058676185, z: 0.03821584}
 --- !u!1 &1830197658401152878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,12 +2747,13 @@ GameObject:
   - component: {fileID: 1830197658409468187}
   - component: {fileID: 1830197658409468189}
   - component: {fileID: 1830197658409468186}
+  - component: {fileID: 1319258891}
   m_Layer: 0
   m_Name: stone3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658409468187
 Transform:
@@ -2425,6 +2818,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1319258891
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658409468184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2831164
+  m_Center: {x: -0.0000018924475, y: -0.000000014901165, z: -0.000000029802322}
 --- !u!1 &1830197658410400992
 GameObject:
   m_ObjectHideFlags: 0
@@ -2436,12 +2842,13 @@ GameObject:
   - component: {fileID: 1830197658410400995}
   - component: {fileID: 1830197658410400997}
   - component: {fileID: 1830197658410400994}
+  - component: {fileID: 267097223}
   m_Layer: 0
   m_Name: stone7 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658410400995
 Transform:
@@ -2506,6 +2913,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &267097223
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658410400992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169326
+  m_Center: {x: 0.058617175, y: 0.00005724281, z: 0.038216077}
 --- !u!1 &1830197658466671649
 GameObject:
   m_ObjectHideFlags: 0
@@ -2517,12 +2937,13 @@ GameObject:
   - component: {fileID: 1830197658466671648}
   - component: {fileID: 1830197658466671650}
   - component: {fileID: 1830197658466671651}
+  - component: {fileID: 911036587}
   m_Layer: 0
   m_Name: stone1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658466671648
 Transform:
@@ -2587,6 +3008,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &911036587
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658466671649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.27345422
+  m_Center: {x: 0.036359742, y: 0.013816901, z: 0.2010342}
 --- !u!1 &1830197658471072215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,12 +3068,13 @@ GameObject:
   - component: {fileID: 1830197658548589613}
   - component: {fileID: 1830197658548589615}
   - component: {fileID: 1830197658548589612}
+  - component: {fileID: 1948794403}
   m_Layer: 0
   m_Name: stone7 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658548589613
 Transform:
@@ -2704,6 +3139,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1948794403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658548589610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1028859, y: 0.36338657, z: 0.32136708}
+  m_Center: {x: 0.05861709, y: 0.000058396763, z: 0.038216677}
 --- !u!1 &1830197658609014856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2763,12 +3211,13 @@ GameObject:
   - component: {fileID: 1830197658644117627}
   - component: {fileID: 1830197658644117629}
   - component: {fileID: 1830197658644117626}
+  - component: {fileID: 59041785}
   m_Layer: 0
   m_Name: stone7 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658644117627
 Transform:
@@ -2833,6 +3282,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &59041785
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658644117624}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169326
+  m_Center: {x: 0.058617197, y: 0.00005748123, z: 0.0382156}
 --- !u!1 &1830197658682738509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,12 +3306,13 @@ GameObject:
   - component: {fileID: 1830197658682738508}
   - component: {fileID: 1830197658682738510}
   - component: {fileID: 1830197658682738511}
+  - component: {fileID: 1130835225}
   m_Layer: 0
   m_Name: stone7 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658682738508
 Transform:
@@ -2914,6 +3377,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1130835225
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658682738509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18169329
+  m_Center: {x: 0.058617353, y: 0.00005865789, z: 0.0382156}
 --- !u!1 &1830197658720988052
 GameObject:
   m_ObjectHideFlags: 0
@@ -2925,12 +3401,13 @@ GameObject:
   - component: {fileID: 1830197658720988055}
   - component: {fileID: 1830197658720988041}
   - component: {fileID: 1830197658720988054}
+  - component: {fileID: 1046542487}
   m_Layer: 0
   m_Name: stone4 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658720988055
 Transform:
@@ -2995,6 +3472,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1046542487
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658720988052}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897916
+  m_Center: {x: 0.00000007450581, y: 0.0000007748604, z: 0.0000019073486}
 --- !u!1 &1830197658760788455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,12 +3496,13 @@ GameObject:
   - component: {fileID: 1830197658760788454}
   - component: {fileID: 1830197658760788440}
   - component: {fileID: 1830197658760788441}
+  - component: {fileID: 1798866983}
   m_Layer: 0
   m_Name: stone4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658760788454
 Transform:
@@ -3076,6 +3567,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1798866983
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658760788455}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.000000074505806, y: -0.000000059604645, z: -0.00000008940697}
 --- !u!1 &1830197658793829430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3087,12 +3591,13 @@ GameObject:
   - component: {fileID: 1830197658793829417}
   - component: {fileID: 1830197658793829419}
   - component: {fileID: 1830197658793829416}
+  - component: {fileID: 1971989640}
   m_Layer: 0
   m_Name: stone4 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658793829417
 Transform:
@@ -3157,6 +3662,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1971989640
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658793829430}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: -0.00000040233135, y: -0.0000009536743, z: -0.000000074505806}
 --- !u!1 &1830197658881516917
 GameObject:
   m_ObjectHideFlags: 0
@@ -3168,12 +3686,13 @@ GameObject:
   - component: {fileID: 1830197658881516916}
   - component: {fileID: 1830197658881516918}
   - component: {fileID: 1830197658881516919}
+  - component: {fileID: 2145231489}
   m_Layer: 0
   m_Name: stone2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658881516916
 Transform:
@@ -3238,6 +3757,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &2145231489
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658881516917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21925877
+  m_Center: {x: -0.000000029802322, y: -0.00000020861626, z: -0.000000014901161}
 --- !u!1 &1830197658931477684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3249,12 +3781,13 @@ GameObject:
   - component: {fileID: 1830197658931477687}
   - component: {fileID: 1830197658931477673}
   - component: {fileID: 1830197658931477686}
+  - component: {fileID: 1401011651}
   m_Layer: 0
   m_Name: stone4 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658931477687
 Transform:
@@ -3319,6 +3852,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1401011651
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658931477684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: -0.0000018328428, y: 0, z: -0.000000020489097}
 --- !u!1 &1830197658936871111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,12 +3876,13 @@ GameObject:
   - component: {fileID: 1830197658936871110}
   - component: {fileID: 1830197658936870968}
   - component: {fileID: 1830197658936870969}
+  - component: {fileID: 56408599}
   m_Layer: 0
   m_Name: stone4 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197658936871110
 Transform:
@@ -3400,6 +3947,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &56408599
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197658936871111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.000000074505806, y: -0.0000009536743, z: -0.00000005029142}
 --- !u!1 &1830197659015733719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,12 +3971,13 @@ GameObject:
   - component: {fileID: 1830197659015733718}
   - component: {fileID: 1830197659015733704}
   - component: {fileID: 1830197659015733705}
+  - component: {fileID: 385933243}
   m_Layer: 0
   m_Name: stone4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197659015733718
 Transform:
@@ -3481,6 +4042,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &385933243
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197659015733719}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897919
+  m_Center: {x: -0.0000008791685, y: -0.00000008940696, z: -4.440892e-15}
 --- !u!1 &1830197659056476484
 GameObject:
   m_ObjectHideFlags: 0
@@ -3492,12 +4066,13 @@ GameObject:
   - component: {fileID: 1830197659056476487}
   - component: {fileID: 1830197659056476345}
   - component: {fileID: 1830197659056476486}
+  - component: {fileID: 832858628}
   m_Layer: 0
   m_Name: stone4 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197659056476487
 Transform:
@@ -3562,6 +4137,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &832858628
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197659056476484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.0000029355288, y: 0.0000019073486, z: -0.000000014901161}
 --- !u!1 &1830197659100858137
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,12 +4161,13 @@ GameObject:
   - component: {fileID: 1830197659100858136}
   - component: {fileID: 1830197659100858138}
   - component: {fileID: 1830197659100858139}
+  - component: {fileID: 1732814347}
   m_Layer: 0
   m_Name: stone2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1830197659100858136
 Transform:
@@ -3643,6 +4232,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1732814347
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830197659100858137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.21925877
+  m_Center: {x: -0.000000029802322, y: -0.00000166893, z: 1.0587912e-22}
 --- !u!1 &1830197659107254107
 GameObject:
   m_ObjectHideFlags: 0
@@ -3690,12 +4292,13 @@ GameObject:
   - component: {fileID: 8390301665597379510}
   - component: {fileID: 2762479667526607268}
   - component: {fileID: 5870990058530022980}
+  - component: {fileID: 2096582894}
   m_Layer: 0
   m_Name: stone6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8390301665597379510
 Transform:
@@ -3760,6 +4363,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &2096582894
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3036151714110097180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.14511652
+  m_Center: {x: 0.046452217, y: 0.022819238, z: -0.014032373}
 --- !u!1 &5596368442347193726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,12 +4387,13 @@ GameObject:
   - component: {fileID: 9194184459469495903}
   - component: {fileID: 2143781869231004156}
   - component: {fileID: 2261813607731363299}
+  - component: {fileID: 1681693551}
   m_Layer: 0
   m_Name: stone4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9194184459469495903
 Transform:
@@ -3841,6 +4458,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1681693551
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5596368442347193726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.23897918
+  m_Center: {x: 0.000000074505806, y: 0, z: -0.000000044703484}
 --- !u!1 &7830011169746605289
 GameObject:
   m_ObjectHideFlags: 0
@@ -3887,12 +4517,13 @@ GameObject:
   - component: {fileID: 1206052169640208513}
   - component: {fileID: 384790635658779511}
   - component: {fileID: 7970966359972389813}
+  - component: {fileID: 1685380229}
   m_Layer: 0
   m_Name: stone5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1206052169640208513
 Transform:
@@ -3957,3 +4588,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &1685380229
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8350089016475703824}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2484537
+  m_Center: {x: -0.0000019073486, y: 0.000000014901167, z: -0.000000029802322}
