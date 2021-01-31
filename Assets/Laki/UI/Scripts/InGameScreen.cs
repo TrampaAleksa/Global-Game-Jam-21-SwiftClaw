@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class InGameScreen : UIScreen
 {
+    public bool isAnim=true;
+    public GameObject obj;
+    public GameObject obj1;
     public enum SubScreenState
     {
         tutorial,
@@ -18,6 +21,11 @@ public class InGameScreen : UIScreen
     public UIScreen currentSubSreen;
     public SubScreenState screenIndex;
     public List<UIScreen> screens;
+    
+    private void Start()
+    {
+        isAnim = true;
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -33,10 +41,6 @@ public class InGameScreen : UIScreen
                     Pause();
                 }
             }
-        }
-        if(Input.GetKeyDown(KeyCode.T))
-        {
-            ChangeSubScreen(3);
         }
     }
     public void Pause()
