@@ -24,14 +24,13 @@ public class PlayerAiController : MonoBehaviour
     {
         navmesh.enabled = true;
         navmesh.SetDestination(target.position);
-        animator.SetBool("isWalking", false);
         _playerMovement.enabled = false;
     }
 
     public void DisableAi()
     {
         navmesh.enabled = false;
-        animator.SetBool("isWalking", true);
+        GameManager.Instance.playerAnimator.SetTrigger("FinishRunning");
         _playerMovement.enabled = true;
     }
 }

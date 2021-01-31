@@ -3112,15 +3112,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00059334154
+      value: -0.00059334125
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6558646
+      value: -0.65586454
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000515516
+      value: -0.00051551557
       objectReference: {fileID: 0}
     - target: {fileID: 1667702282819793489, guid: dc9b299afefa672428b725b8a2b18ebe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4036,6 +4036,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2327947001926546663, guid: 2c749f5554287104a9a128ad32266897, type: 3}
+      propertyPath: jumpScareDuration
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5112867888810595292, guid: 2c749f5554287104a9a128ad32266897, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4084,6 +4088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5112867888810595295, guid: 2c749f5554287104a9a128ad32266897, type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 349515612}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c749f5554287104a9a128ad32266897, type: 3}
 --- !u!1001 &6025703393637540358

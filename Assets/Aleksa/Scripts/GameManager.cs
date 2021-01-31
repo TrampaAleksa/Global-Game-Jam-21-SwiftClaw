@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     [NonSerialized]public PlayerScareHandler scareHandler;
     [NonSerialized] public SoundHandler soundHandler;
 
+    public Animator playerAnimator;
+
     private void Awake()
     {
         Instance = this;

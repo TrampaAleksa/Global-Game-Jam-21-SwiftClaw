@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerScareHandler : MonoBehaviour
 {
     [NonSerialized]public PlayerAiController aiController;
+
+    public float jumpScareDuration;
     
     private void Awake()
     {
@@ -15,6 +17,15 @@ public class PlayerScareHandler : MonoBehaviour
     private ScareField currentField;
     public void RunToPoint(Transform runToPoint, ScareField field)
     {
+        StartCoroutine(JumpscareDelay(runToPoint, field));
+    }
+
+    private IEnumerator JumpscareDelay(Transform runToPoint, ScareField field)
+    {
+        GameManager.Instance.playerAnimator.SetTrigger("JumpScare");
+        
+        yield return new WaitForSeconds(jumpScareDuration);
+        
         print("Player is scared, running!");
         aiController.SetTarget(runToPoint);
         runToPoint.GetComponentInChildren<RunToPoint>().EnablePoint();

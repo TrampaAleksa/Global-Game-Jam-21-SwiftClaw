@@ -12,12 +12,30 @@ public class PlayerMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     private Transform cam;
+    private static readonly int IsWalking = Animator.StringToHash("isWalking");
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         cam = Camera.main.transform;
     }
-    
+
+    private void Update()
+    {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        if (direction.magnitude >= 0.1f)
+        {
+            GameManager.Instance.playerAnimator.SetBool(IsWalking, true);
+            return;
+        }
+        
+        GameManager.Instance.playerAnimator.SetBool(IsWalking, false);
+
+    }
+
     private void FixedUpdate()
     {
         var playerTransform = transform;
@@ -35,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
 
             rb.MovePosition(playerTransform.position + moveDir.normalized * (movementSpeed * Time.deltaTime));
-
+            
         }
     }
 }
