@@ -15,7 +15,6 @@ public class UIController : MonoBehaviour
     {
         if (Instance == null)
             Instance = this;
-        GameObject.DontDestroyOnLoad(gameObject);
         currentScreen.TurnOnScreen();
     }
 

@@ -17,6 +17,7 @@ public class PlayerScareHandler : MonoBehaviour
     private ScareField currentField;
     public void RunToPoint(Transform runToPoint, ScareField field)
     {
+        field.fieldSource.snakeAnimator.SetTrigger("Hiss");
         StartCoroutine(JumpscareDelay(runToPoint, field));
     }
 
