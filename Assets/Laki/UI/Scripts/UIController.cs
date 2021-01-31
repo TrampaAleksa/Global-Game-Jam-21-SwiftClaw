@@ -9,12 +9,14 @@ using UnityEngine.SceneManagement;
 public class UIController : MonoBehaviour
 {
     public UIScreen currentScreen;
+    public UIScreen mainMenu;
     public static UIController Instance;
 
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
+
         currentScreen.TurnOnScreen();
     }
 
@@ -28,7 +30,11 @@ public class UIController : MonoBehaviour
     public void ChangeScreen(int index)
     {
         currentScreen.TurnOffScreen();
-        ChangeScene(index);
+        if (currentScreen == mainMenu)
+            gameObject.AddComponent<TimedAction>().StartTimedAction(() => ChangeScene(index), 1);
+        else
+            ChangeScene(index);
+         
     }
 
     public void Toggle(bool isTrue)
