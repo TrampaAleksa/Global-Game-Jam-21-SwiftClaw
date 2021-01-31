@@ -7,6 +7,8 @@
         GameManager.Instance.lightHandler.AddLight(15);
         print("picked up light ");
         GameManager.Instance.soundHandler.lightPickup.Play();
-        Destroy(gameObject);
+        GameManager.Instance.gameObject.AddComponent<TimedAction>().StartTimedAction(() => gameObject.SetActive(true), GameManager.Instance.lightHandler.fireflyCooldown);
+        // Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
