@@ -26,6 +26,8 @@ public class ScoreHandler : MonoBehaviour
         if (TotalPartsDelivered >= scoreForWin)
         {
             print("Won the game");
+            InGameScreen igs = (InGameScreen) UIController.Instance.currentScreen;
+            igs.ChangeSubScreen((int)InGameScreen.SubScreenState.congrats);
             return;
         }
 
